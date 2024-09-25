@@ -9,6 +9,13 @@
     <lastBuildDate>Wed, 25 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>Soy un apasionado por el futbol y el análisis de datos, me interesa mucho en como el análisis y la ciencia de datos puede aportar a este y muchos otros deportes y poder así agregar valor a partir de información estadistica mediante reportes estáticos y dinámicos así como dashboards.&#xA;En 2008 obtuve mi licenciatura en Matemática y posteriormente cursé una maestría en Universidad Central de Venezuela la cual culminé en el año 2019, esto me ayudo a conocer sobre las bases teóricas que rigen la matemática y estadistica, durante mi estancia en el Banco Nacional de Crédito, Synergy y CAF logré adquirir diferentes aptitudes necesarias para el mundo de ciencia de datos, tanto desde el punto de vista de la programación como desde el valor agregado que se puede aportar con diversos análisis.</description>
+    </item>
+    <item>
       <title>Análisis Fecha 9 - Futve 2024</title>
       <link>/2024/09/25/an-lisis-fecha-9-futve-2024/</link>
       <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
@@ -56,13 +63,6 @@
       <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
       <guid>/2016/12/30/a-plain-markdown-post/</guid>
       <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:&#xA;You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc. There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     <item>
       <title>Lorem Ipsum</title>

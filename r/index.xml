@@ -71,5 +71,12 @@
       <guid>/2024/03/09/extranjeros-en-el-futve/</guid>
       <description>Data a emplear Para acceder a la data del presente análisis se usó la librería worldfootballR donde se usó la función tm_player_market_values para lo siguiente,&#xA;Extraer la plantilla de los equipos en la temporada 2024 del Futve. Extraer la plantilla de los equipos desde el 2004 hasta la temporada actual, cabe destacar que no existe información para los años 2020, 2021 y 2022. Por otra parte se realizó una recolección de data de las temporadas pasadas (2023) de la base completa de paises que ofrece la herramienta, en total existe información para 73 paises (en este documento sólo se consideraron las ligas top de Europa y sudamñerica).</description>
     </item>
+    <item>
+      <title>Extracción data Futve</title>
+      <link>/2024/02/17/extracci-n-data-futve/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/2024/02/17/extracci-n-data-futve/</guid>
+      <description>Librería worldfootballR Es una librería de libre acceso que permite descargar información interesante sobre fútbol de manera gratuita. Tiene funciones optimizadas que permiten obtener en cuestión de segundos información importante de más de 70 paises y unas 78 competiciones alrededor del mundo. Las principales fuentes de datos que se consultan son,&#xA;Fbref: contiene información sobre diversas ligas en todo el mundo ofrece información sobre alineaciones, resultados, estadísticas a nivel de equipo y a nivel jugador.</description>
+    </item>
   </channel>
 </rss>

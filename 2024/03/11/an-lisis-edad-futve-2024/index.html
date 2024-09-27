@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.122.0">
+
+
+<title>Análisis edad Futve 2024 - Portafolio de FT</title>
+<meta property="og:title" content="Análisis edad Futve 2024 - Portafolio de FT">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">Acerca</a></li>
+    
+    <li><a href="https://github.com/Fr3ddy1">GitHub</a></li>
+    
+    <li><a href="https://www.linkedin.com/in/freddy-f-tapia-c-667345a4/">Linkedin</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">11 min read</span>
+    
+
+    <h1 class="article-title">Análisis edad Futve 2024</h1>
+
+    
+    <span class="article-date">2024-03-11</span>
+    
+
+    <div class="article-content">
+      
+      <h2 id="data-a-emplear">Data a emplear</h2>
+<p>Para acceder a la data del presente análisis se usó la librería <strong>worldfootballR</strong> donde se usó la función <strong>tm_player_market_values</strong> para lo siguiente,</p>
+<ul>
+<li>Extraer la plantilla de los equipos en la temporada 2024 del Futve.</li>
+<li>Extraer la plantilla de los equipos desde el 2004 hasta la temporada actual, cabe destacar que no existe información para los años 2020, 2021 y 2022.</li>
+</ul>
+<p>Por otra parte se realizó una recolección de data de las temporadas pasadas (2023) de la base completa de paises que ofrece la herramienta, en total existe información para 73 paises (en este documento sólo se consideraron las ligas top de Europa y sudamérica). Esta información ayudará a poner en contexto si el promedio de edad en el Futve es bajo o no. Para ello se realizó el cálculo para toda sudamérica y las principales ligas europeas.</p>
+<h2 id="edad-futve-2024">Edad Futve 2024</h2>
+<p>En la siguiente tabla se muestra un comparativo en cuanto al promedio de edad, jugador más jóven y de mayor edad de los equipos del Futve en la presente temporada, el Caracas FC es el equipo que cuenta con menor promedio, seguido de la UCV y el Monagas.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Equipo</th>
+<th style="text-align:left">Cantidad jug</th>
+<th style="text-align:left">Media edad</th>
+<th style="text-align:left">Edad min</th>
+<th style="text-align:left">Jug más jóven</th>
+<th style="text-align:left">Edad max</th>
+<th style="text-align:left">Jug de mayor edad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Caracas</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">22.68</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Charly Vegas</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Rubert Quijada</td>
+</tr>
+<tr>
+<td style="text-align:left">Universidad Central de Venezuela FC</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">23.86</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Gianmarco Martínez</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">Adrián Martínez</td>
+</tr>
+<tr>
+<td style="text-align:left">Monagas</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">24.29</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Saúl Asibe</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Henry Pernía</td>
+</tr>
+<tr>
+<td style="text-align:left">Angostura Fútbol Club</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">24.52</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Bryant Ramírez</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Víctor Rincones</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo La Guaira</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">24.58</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Diego Valencia</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Edder Farías</td>
+</tr>
+<tr>
+<td style="text-align:left">Estudiantes de Mérida</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">24.80</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Ander Izarra</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Néstor Canelón</td>
+</tr>
+<tr>
+<td style="text-align:left">Zamora</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">25.08</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Santos Torrealba</td>
+<td style="text-align:left">36</td>
+<td style="text-align:left">Luis Vargas Archila</td>
+</tr>
+<tr>
+<td style="text-align:left">Metropolitanos</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">25.40</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Óscar Hinojosa</td>
+<td style="text-align:left">37</td>
+<td style="text-align:left">Charlis Ortiz</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Rayo Zuliano</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">25.62</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Junior Colina</td>
+<td style="text-align:left">40</td>
+<td style="text-align:left">Ángel Faría</td>
+</tr>
+<tr>
+<td style="text-align:left">Carabobo</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">25.65</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Cesar Chavez</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Harrison Contreras</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Táchira</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">26.04</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Luis Carrero</td>
+<td style="text-align:left">34</td>
+<td style="text-align:left">Andrés Ríos</td>
+</tr>
+<tr>
+<td style="text-align:left">Academia Puerto Cabello</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">27.22</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Rui Alleyne</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">Miku</td>
+</tr>
+<tr>
+<td style="text-align:left">Portuguesa</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">28.12</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Luis El Khuffash</td>
+<td style="text-align:left">42</td>
+<td style="text-align:left">Richard José Blanco</td>
+</tr>
+<tr>
+<td style="text-align:left">CD Hermanos Colmenarez</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">28.39</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Isai Valladares</td>
+<td style="text-align:left">39</td>
+<td style="text-align:left">Dollbys Rodríguez</td>
+</tr>
+</tbody>
+</table>
+<p>En el torneo actual existen 17 jugadores menores de 18 años, de los cuales 4 pertenecen al Caracas, 4 a la UCV y 3 al Deportivo Táchira. Dentro de los jugadores con mayor edad se encuentran Richard Blanco del Portuguesa (42 años),  Angel Faría del Rayo Zuliano (40 años) y Dollbys Rodriguez del Inter Barinas (39 años).</p>
+<h2 id="edad-según-su-posición">Edad según su posición</h2>
+<p>De acuerdo a la data recolectada es posible clasificar a los jugadores dentro de cuatro posiciones: arqueros, defensas, mediocampo y delanteros, la siguiente sección muestra un comparativo de los equipos de acuerdo a cada posición.</p>
+<h2 id="arqueros">Arqueros</h2>
+<p>En promedio el Caracas FC es el equipo que tiene en promedio arqueros más jovenes. Uno de ellos es Juan Vegas. Por otra parte Rui Alleyne (18 años) de la Academia Puerto Cabello es el arquero más joven del torneo y Daniel Valdés (38 años) del Rayo Zuliano es el arquero de mayor edad.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Squad</th>
+<th style="text-align:left">n</th>
+<th style="text-align:left">media</th>
+<th style="text-align:left">min</th>
+<th style="text-align:left">jug_min</th>
+<th style="text-align:left">max</th>
+<th style="text-align:left">jug_max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Caracas</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">23.00</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Juan Vegas</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">Christian Vargas</td>
+</tr>
+<tr>
+<td style="text-align:left">Academia Puerto Cabello</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">24.00</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Rui Alleyne</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">Giancarlo Schiavone</td>
+</tr>
+<tr>
+<td style="text-align:left">Carabobo</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">24.00</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Thomas Riveros</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">Lucas Bruera</td>
+</tr>
+<tr>
+<td style="text-align:left">Zamora</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">24.33</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Moises Rivas</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">Luis Terán</td>
+</tr>
+<tr>
+<td style="text-align:left">Estudiantes de Mérida</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">25.00</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">Aldair Peña</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">Beycker Velásquez</td>
+</tr>
+<tr>
+<td style="text-align:left">Monagas</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">25.50</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Jesús Cabrera</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">Brian Olivera</td>
+</tr>
+<tr>
+<td style="text-align:left">Universidad Central de Venezuela FC</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">26.00</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">Miguel Silva</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">Juan Reyes</td>
+</tr>
+<tr>
+<td style="text-align:left">CD Hermanos Colmenarez</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">26.50</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Luis Forero</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Álvaro Forero</td>
+</tr>
+<tr>
+<td style="text-align:left">Portuguesa</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">26.50</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Carlos Hernández</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Yhonattan Yustiz</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Táchira</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">27.00</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">Jesús Camargo</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">Alejandro Araque</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo La Guaira</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">27.50</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">Cristopher Varela</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left">Eduardo Lima</td>
+</tr>
+<tr>
+<td style="text-align:left">Angostura Fútbol Club</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">28.50</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">Moisés Gallo</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Víctor Rincones</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Rayo Zuliano</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">32.00</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">Luis Corredor</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">Daniel Valdés</td>
+</tr>
+<tr>
+<td style="text-align:left">Metropolitanos</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">34.00</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Álvaro Villete</td>
+<td style="text-align:left">36</td>
+<td style="text-align:left">Tito Rojas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="defensas">Defensas</h2>
+<p>En promedio el Metropolitanos FC es el equipo que tiene en promedio defensas más jovenes. Uno de ellos es Carlos Díaz. Por otra parte Alexander Boscan (17 años) del Deportivo Táchira es el defensa más joven del torneo y Ángel Faría (40 años) del Rayo Zuliano es el defensa de mayor edad.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Squad</th>
+<th style="text-align:left">n</th>
+<th style="text-align:left">media</th>
+<th style="text-align:left">min</th>
+<th style="text-align:left">jug_min</th>
+<th style="text-align:left">max</th>
+<th style="text-align:left">jug_max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Metropolitanos</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">24.00</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Carlos Díaz</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">Jean Fuentes</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo La Guaira</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">24.12</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Keiber Lamadrid</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">Omar Córdoba</td>
+</tr>
+<tr>
+<td style="text-align:left">Estudiantes de Mérida</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">24.29</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Javier Marquez</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Galileo Del Castillo</td>
+</tr>
+<tr>
+<td style="text-align:left">Caracas</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">25.29</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Andrés Kinsler</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Rubert Quijada</td>
+</tr>
+<tr>
+<td style="text-align:left">Angostura Fútbol Club</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">25.38</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">Christian Gómez</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">Anthony Matos</td>
+</tr>
+<tr>
+<td style="text-align:left">Universidad Central de Venezuela FC</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">26.50</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">Ignacio Anzola</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">Adrián Martínez</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Táchira</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">26.57</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Alexander Boscan</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Pablo Camacho</td>
+</tr>
+<tr>
+<td style="text-align:left">Monagas</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">26.60</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Kleybert Rivero</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Henry Pernía</td>
+</tr>
+<tr>
+<td style="text-align:left">CD Hermanos Colmenarez</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">26.71</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Isai Valladares</td>
+<td style="text-align:left">34</td>
+<td style="text-align:left">Juan Muriel</td>
+</tr>
+<tr>
+<td style="text-align:left">Academia Puerto Cabello</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">27.12</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Oscar Conde</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left">Carlos Rivero</td>
+</tr>
+<tr>
+<td style="text-align:left">Zamora</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">27.17</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Clyde García</td>
+<td style="text-align:left">36</td>
+<td style="text-align:left">Luis Vargas Archila</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Rayo Zuliano</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">28.00</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Leonardo Mosquera</td>
+<td style="text-align:left">40</td>
+<td style="text-align:left">Ángel Faría</td>
+</tr>
+<tr>
+<td style="text-align:left">Carabobo</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">28.29</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">Miguel Pernía Ca.</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Francisco Flores</td>
+</tr>
+<tr>
+<td style="text-align:left">Portuguesa</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">29.50</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">Junior Alberto Moreno</td>
+<td style="text-align:left">37</td>
+<td style="text-align:left">José Luis Granados</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mediocampo">Mediocampo</h2>
+<p>En promedio el Caracas FC es el equipo que tiene en promedio mediocampistas más jovenes. Uno de ellos es Charly Vegas. Por otra parte Gianmarco Martínez (16 años) de la UCV es uno de los mediocampistas más jovenes del torneo y Dollbys Rodríguez (39 años) del Inter Barinas es el mediocampista de mayor edad.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Squad</th>
+<th style="text-align:left">n</th>
+<th style="text-align:left">media</th>
+<th style="text-align:left">min</th>
+<th style="text-align:left">jug_min</th>
+<th style="text-align:left">max</th>
+<th style="text-align:left">jug_max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Caracas</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">20.73</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Charly Vegas</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Vicente Rodríguez</td>
+</tr>
+<tr>
+<td style="text-align:left">Universidad Central de Venezuela FC</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">22.33</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Gianmarco Martínez</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">Alexander Gonzalez</td>
+</tr>
+<tr>
+<td style="text-align:left">Monagas</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">23.00</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Saúl Asibe</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">José Murillo</td>
+</tr>
+<tr>
+<td style="text-align:left">Angostura Fútbol Club</td>
+<td style="text-align:left">12</td>
+<td style="text-align:left">23.17</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Bryant Ramírez</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">Dimas Meza</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo La Guaira</td>
+<td style="text-align:left">13</td>
+<td style="text-align:left">23.25</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Diego Valencia</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">Andrés Hernández</td>
+</tr>
+<tr>
+<td style="text-align:left">Metropolitanos</td>
+<td style="text-align:left">10</td>
+<td style="text-align:left">23.60</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Óscar Hinojosa</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">Robert Garcés</td>
+</tr>
+<tr>
+<td style="text-align:left">Estudiantes de Mérida</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">24.38</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Ander Izarra</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Néstor Canelón</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Rayo Zuliano</td>
+<td style="text-align:left">13</td>
+<td style="text-align:left">24.92</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Cristian Romero</td>
+<td style="text-align:left">34</td>
+<td style="text-align:left">Armando Araque</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Táchira</td>
+<td style="text-align:left">13</td>
+<td style="text-align:left">25.31</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Luis Carrero</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left">Maurice Cova</td>
+</tr>
+<tr>
+<td style="text-align:left">Carabobo</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">25.45</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Cesar Chavez</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Harrison Contreras</td>
+</tr>
+<tr>
+<td style="text-align:left">Zamora</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">25.64</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Santos Torrealba</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Luis Carlos Melo</td>
+</tr>
+<tr>
+<td style="text-align:left">Portuguesa</td>
+<td style="text-align:left">11</td>
+<td style="text-align:left">26.27</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Luis El Khuffash</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">José Alí Meza</td>
+</tr>
+<tr>
+<td style="text-align:left">Academia Puerto Cabello</td>
+<td style="text-align:left">9</td>
+<td style="text-align:left">27.22</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Jesús Cantillo</td>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Junior Cedeño</td>
+</tr>
+<tr>
+<td style="text-align:left">CD Hermanos Colmenarez</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">28.50</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Maicol Ruiz</td>
+<td style="text-align:left">39</td>
+<td style="text-align:left">Dollbys Rodríguez</td>
+</tr>
+</tbody>
+</table>
+<h2 id="delanteros">Delanteros</h2>
+<p>En promedio el Rayo Zuliano es el equipo que tiene en promedio delanteros más jovenes. Uno de ellos es Junior Colina. Por otra parte Héctor Manrique (17 años) del Caracas FC es uno de los delanteros más jovenes del torneo y Richard Blanco (42 años) del Portuguesa es el delantero de mayor edad.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Squad</th>
+<th style="text-align:left">n</th>
+<th style="text-align:left">media</th>
+<th style="text-align:left">min</th>
+<th style="text-align:left">jug_min</th>
+<th style="text-align:left">max</th>
+<th style="text-align:left">jug_max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Deportivo Rayo Zuliano</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">19.67</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Junior Colina</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">César Salazar</td>
+</tr>
+<tr>
+<td style="text-align:left">Monagas</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">20.50</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Ronald Rodríguez</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">Santiago Herrera</td>
+</tr>
+<tr>
+<td style="text-align:left">Carabobo</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">21.33</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Loureins Martínez</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">Juan Francisco Apaolaza</td>
+</tr>
+<tr>
+<td style="text-align:left">Universidad Central de Venezuela FC</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">22.00</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">John Alvarado</td>
+<td style="text-align:left">22</td>
+<td style="text-align:left">John Alvarado</td>
+</tr>
+<tr>
+<td style="text-align:left">Zamora</td>
+<td style="text-align:left">6</td>
+<td style="text-align:left">22.33</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Luis Teran</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">Yeangel Montero</td>
+</tr>
+<tr>
+<td style="text-align:left">Caracas</td>
+<td style="text-align:left">5</td>
+<td style="text-align:left">23.20</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Héctor Manrique</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">Edwuin Pernía</td>
+</tr>
+<tr>
+<td style="text-align:left">Angostura Fútbol Club</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">26.00</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">Ronny Maza</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">Ronny Maza</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Táchira</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">27.00</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Jean Castillo</td>
+<td style="text-align:left">34</td>
+<td style="text-align:left">Andrés Ríos</td>
+</tr>
+<tr>
+<td style="text-align:left">Estudiantes de Mérida</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">27.00</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">Luis Arenas</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">Elías Alderete</td>
+</tr>
+<tr>
+<td style="text-align:left">Metropolitanos</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">27.00</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Carlos Paraco</td>
+<td style="text-align:left">37</td>
+<td style="text-align:left">Charlis Ortiz</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo La Guaira</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">28.00</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Luis Angel Peña</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Edder Farías</td>
+</tr>
+<tr>
+<td style="text-align:left">Academia Puerto Cabello</td>
+<td style="text-align:left">8</td>
+<td style="text-align:left">28.12</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Gabriel Fermín</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">Miku</td>
+</tr>
+<tr>
+<td style="text-align:left">CD Hermanos Colmenarez</td>
+<td style="text-align:left">7</td>
+<td style="text-align:left">30.83</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">César Magallán</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Ángel Osorio</td>
+</tr>
+<tr>
+<td style="text-align:left">Portuguesa</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">32.33</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Santiago Tovar</td>
+<td style="text-align:left">42</td>
+<td style="text-align:left">Richard José Blanco</td>
+</tr>
+</tbody>
+</table>
+<h2 id="evolución-de-la-edad-del-futve-en-el-tiempo">Evolución de la edad del Futve en el tiempo</h2>
+<p>Es interesante ver la evolución del promedio de edad del Futve en el tiempo, la siguiente tabla muestra como ha variado esta cantidad desde el 2004 hasta la actualidad, exceptuando los años 2020, 2021 y 2022. No se observan cambios significativos a lo largo del período comprendido entre 2004 y 2013, sin embargo desde el 2015 se observa una disminución en el promedio de edad, ya en el 2023 y en este año (25.46 años) el promedio se ubica cerca de 25 años.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Año</th>
+<th style="text-align:left">Cantidad jug</th>
+<th style="text-align:left">Media edad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2004</td>
+<td style="text-align:left">278</td>
+<td style="text-align:left">26.06</td>
+</tr>
+<tr>
+<td style="text-align:left">2005</td>
+<td style="text-align:left">226</td>
+<td style="text-align:left">25.64</td>
+</tr>
+<tr>
+<td style="text-align:left">2006</td>
+<td style="text-align:left">303</td>
+<td style="text-align:left">26.33</td>
+</tr>
+<tr>
+<td style="text-align:left">2007</td>
+<td style="text-align:left">725</td>
+<td style="text-align:left">23.48</td>
+</tr>
+<tr>
+<td style="text-align:left">2008</td>
+<td style="text-align:left">693</td>
+<td style="text-align:left">25.18</td>
+</tr>
+<tr>
+<td style="text-align:left">2009</td>
+<td style="text-align:left">587</td>
+<td style="text-align:left">25.31</td>
+</tr>
+<tr>
+<td style="text-align:left">2010</td>
+<td style="text-align:left">661</td>
+<td style="text-align:left">25.32</td>
+</tr>
+<tr>
+<td style="text-align:left">2011</td>
+<td style="text-align:left">628</td>
+<td style="text-align:left">25.43</td>
+</tr>
+<tr>
+<td style="text-align:left">2012</td>
+<td style="text-align:left">613</td>
+<td style="text-align:left">25.42</td>
+</tr>
+<tr>
+<td style="text-align:left">2013</td>
+<td style="text-align:left">542</td>
+<td style="text-align:left">25.06</td>
+</tr>
+<tr>
+<td style="text-align:left">2015</td>
+<td style="text-align:left">851</td>
+<td style="text-align:left">22.58</td>
+</tr>
+<tr>
+<td style="text-align:left">2016</td>
+<td style="text-align:left">796</td>
+<td style="text-align:left">22.74</td>
+</tr>
+<tr>
+<td style="text-align:left">2017</td>
+<td style="text-align:left">761</td>
+<td style="text-align:left">22.05</td>
+</tr>
+<tr>
+<td style="text-align:left">2018</td>
+<td style="text-align:left">904</td>
+<td style="text-align:left">22.57</td>
+</tr>
+<tr>
+<td style="text-align:left">2019</td>
+<td style="text-align:left">683</td>
+<td style="text-align:left">22.35</td>
+</tr>
+<tr>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">440</td>
+<td style="text-align:left">25.35</td>
+</tr>
+</tbody>
+</table>
+<img src="/2024/03/11/an-lisis-edad-futve-2024/index_files/figure-html/unnamed-chunk-14-1.png" width="672" />
+<h2 id="comparación-con-sudamerica-y-principales-ligas-europeas">Comparación con sudamerica y principales ligas europeas</h2>
+<p>En la siguiente tabla se puede observar información del 2023 de todas las ligas de sudamerica más la MLS, la liga de México y las ligas más importantes de Europa, donde destacan Inglaterra, Italia, España, Francia, Portugal, Alemania, además de Rusia.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">País</th>
+<th style="text-align:center">Cantidad jug</th>
+<th style="text-align:center">Media edad</th>
+<th style="text-align:center">Edad min</th>
+<th style="text-align:center">Jug más jóven</th>
+<th style="text-align:center">Edad max</th>
+<th style="text-align:center">Jug de mayor edad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">United States</td>
+<td style="text-align:center">813</td>
+<td style="text-align:center">25.06</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">Máximo Carrizo</td>
+<td style="text-align:center">39</td>
+<td style="text-align:center">Brad Guzan</td>
+</tr>
+<tr>
+<td style="text-align:center">France</td>
+<td style="text-align:center">465</td>
+<td style="text-align:center">25.07</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Amidou Doumbouya</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">Dante</td>
+</tr>
+<tr>
+<td style="text-align:center">Uruguay</td>
+<td style="text-align:center">483</td>
+<td style="text-align:center">25.26</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Bruno Arady</td>
+<td style="text-align:center">41</td>
+<td style="text-align:center">Fabián Estoyanoff</td>
+</tr>
+<tr>
+<td style="text-align:center">Venezuela</td>
+<td style="text-align:center">438</td>
+<td style="text-align:center">25.36</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Gustavo Lozano</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">Richard Blanco</td>
+</tr>
+<tr>
+<td style="text-align:center">Portugal</td>
+<td style="text-align:center">498</td>
+<td style="text-align:center">25.46</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">Samu</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">Pepe</td>
+</tr>
+<tr>
+<td style="text-align:center">Russia</td>
+<td style="text-align:center">419</td>
+<td style="text-align:center">25.68</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">Kasra Taheri</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">Guilherme</td>
+</tr>
+<tr>
+<td style="text-align:center">Germany</td>
+<td style="text-align:center">502</td>
+<td style="text-align:center">25.70</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">Madi Monamay</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">Makoto Hasebe</td>
+</tr>
+<tr>
+<td style="text-align:center">Colombia</td>
+<td style="text-align:center">623</td>
+<td style="text-align:center">25.78</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">Andrés Tovar</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">Adrián Ramos</td>
+</tr>
+<tr>
+<td style="text-align:center">Peru</td>
+<td style="text-align:center">513</td>
+<td style="text-align:center">26.01</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">Yván Rojas</td>
+<td style="text-align:center">43</td>
+<td style="text-align:center">Joel Pinto</td>
+</tr>
+<tr>
+<td style="text-align:center">Italy</td>
+<td style="text-align:center">550</td>
+<td style="text-align:center">26.08</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Tommaso Vannucchi</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">Gianluca Pegolo</td>
+</tr>
+<tr>
+<td style="text-align:center">Argentina</td>
+<td style="text-align:center">809</td>
+<td style="text-align:center">26.09</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Franco Mastantuono</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">Enrique Bologna</td>
+</tr>
+<tr>
+<td style="text-align:center">England</td>
+<td style="text-align:center">533</td>
+<td style="text-align:center">26.12</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">Lewis Miley</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">Andy Lonergan</td>
+</tr>
+<tr>
+<td style="text-align:center">Chile</td>
+<td style="text-align:center">418</td>
+<td style="text-align:center">26.14</td>
+<td style="text-align:center">17</td>
+<td style="text-align:center">Cristóbal Dorador</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">Miguel Pinto</td>
+</tr>
+<tr>
+<td style="text-align:center">Brazil</td>
+<td style="text-align:center">615</td>
+<td style="text-align:center">26.26</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Estêvão</td>
+<td style="text-align:center">43</td>
+<td style="text-align:center">Fábio</td>
+</tr>
+<tr>
+<td style="text-align:center">Bolivia</td>
+<td style="text-align:center">572</td>
+<td style="text-align:center">26.33</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Moises Paniagua</td>
+<td style="text-align:center">41</td>
+<td style="text-align:center">José Castillo</td>
+</tr>
+<tr>
+<td style="text-align:center">Ecuador</td>
+<td style="text-align:center">453</td>
+<td style="text-align:center">26.35</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Kendry Páez</td>
+<td style="text-align:center">38</td>
+<td style="text-align:center">Christian Noboa</td>
+</tr>
+<tr>
+<td style="text-align:center">Mexico</td>
+<td style="text-align:center">471</td>
+<td style="text-align:center">26.41</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">César Bustos</td>
+<td style="text-align:center">43</td>
+<td style="text-align:center">Jesús Corona</td>
+</tr>
+<tr>
+<td style="text-align:center">Paraguay</td>
+<td style="text-align:center">432</td>
+<td style="text-align:center">26.59</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">César Miño</td>
+<td style="text-align:center">42</td>
+<td style="text-align:center">Roque Santa Cruz</td>
+</tr>
+<tr>
+<td style="text-align:center">Spain</td>
+<td style="text-align:center">507</td>
+<td style="text-align:center">26.91</td>
+<td style="text-align:center">16</td>
+<td style="text-align:center">Lamine Yamal</td>
+<td style="text-align:center">41</td>
+<td style="text-align:center">Pepe Reina</td>
+</tr>
+</tbody>
+</table>
+<p>El top 3 de ligas con menor promedio de edad lo componen la MLS, la Ligue 1 y el torneo Uruguayo con un promedio de 25.06, 25.07 y 25.26 años respectivamente. Venezuela se ubica en la 4ta posición con 25.36 años. En el otro extremo de este listado se encuentra España con un promedio de 26.91 años.</p>
+<h2 id="top-10-equipos-más-jovenes-en-2023">Top 10 equipos más jovenes en 2023</h2>
+<p>Es posible replicar el análisis anterior pero a nivel de equipo donde destaca el Always Ready de Bolivia como el equipo con menor promedio de edad (21.95 años) en el 2023, de cerca le sigue el New York City FC con un promedio de 22.27 años. Cabe destacar que el Caracas FC en el 2023 se encontraba en el puesto 7 de toda sudamérica y las ligas consideradas con un promedio de 23.04 años, número que este año bajo a 22.68.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Equipo</th>
+<th style="text-align:left">Cantidad jug</th>
+<th style="text-align:left">Media edad</th>
+<th style="text-align:left">Edad min</th>
+<th style="text-align:left">Jug más jóven</th>
+<th style="text-align:left">Edad max</th>
+<th style="text-align:left">Jug de mayor edad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Club Always Ready - Bolivia</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">21.95</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Moises Paniagua</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Ayron del Valle</td>
+</tr>
+<tr>
+<td style="text-align:left">New York City FC - United States</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">22.27</td>
+<td style="text-align:left">15</td>
+<td style="text-align:left">Máximo Carrizo</td>
+<td style="text-align:left">36</td>
+<td style="text-align:left">Maxi Moralez</td>
+</tr>
+<tr>
+<td style="text-align:left">New York Red Bulls - United States</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">22.47</td>
+<td style="text-align:left">15</td>
+<td style="text-align:left">Julian Hall</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Ryan Meara</td>
+</tr>
+<tr>
+<td style="text-align:left">Envigado FC - Colombia</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">22.70</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Andrés Tovar</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">Andrés Cadavid</td>
+</tr>
+<tr>
+<td style="text-align:left">Fortaleza CEIF - Colombia</td>
+<td style="text-align:left">36</td>
+<td style="text-align:left">22.72</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Jordan García</td>
+<td style="text-align:left">34</td>
+<td style="text-align:left">César Hinestroza</td>
+</tr>
+<tr>
+<td style="text-align:left">Caracas FC - Venezuela</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">23.04</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Miguel Vegas</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Rubert Quijada</td>
+</tr>
+<tr>
+<td style="text-align:left">FC Toulouse - France</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">23.04</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Guillaume Restes</td>
+<td style="text-align:left">29</td>
+<td style="text-align:left">Mikkel Desler</td>
+</tr>
+<tr>
+<td style="text-align:left">Defensor Sporting Club - Uruguay</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">23.04</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Rodrigo Dudok</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Guillermo de los Santos</td>
+</tr>
+<tr>
+<td style="text-align:left">FC Famalicão - Portugal</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">23.21</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Zé Henrique</td>
+<td style="text-align:left">28</td>
+<td style="text-align:left">Jhonder Cádiz</td>
+</tr>
+<tr>
+<td style="text-align:left">Chelsea FC - England</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left">23.35</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">Deivid Washington</td>
+<td style="text-align:left">39</td>
+<td style="text-align:left">Thiago Silva</td>
+</tr>
+</tbody>
+</table>
+<h2 id="top-10-equipos-con-mayor-promedio-edad-en-2023">Top 10 equipos con mayor promedio edad en 2023</h2>
+<p>Por otra parte el Club Deportivo Riestra de Argentina (29.51 años) es el equipo con mayor promedio de edad del 2023, de cerca le siguen el Club Libertad Asunción de Paraguay (29.23 años) y el Universitario de Vinto de Bolivia (28.93 años).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Equipo</th>
+<th style="text-align:left">Cantidad jug</th>
+<th style="text-align:left">Media edad</th>
+<th style="text-align:left">Edad min</th>
+<th style="text-align:left">Jug más jóven</th>
+<th style="text-align:left">Edad max</th>
+<th style="text-align:left">Jug de mayor edad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Club Deportivo Riestra - Argentina</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">29.51</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Ramón González</td>
+<td style="text-align:left">37</td>
+<td style="text-align:left">Gustavo Benítez</td>
+</tr>
+<tr>
+<td style="text-align:left">Club Libertad Asunción - Paraguay</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">29.23</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Rodrigo Villalba</td>
+<td style="text-align:left">42</td>
+<td style="text-align:left">Roque Santa Cruz</td>
+</tr>
+<tr>
+<td style="text-align:left">Universitario de Vinto - Bolivia</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">28.93</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Jose Alipaz</td>
+<td style="text-align:left">37</td>
+<td style="text-align:left">Iván Vidaurre</td>
+</tr>
+<tr>
+<td style="text-align:left">Rayo Vallecano - Spain</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">28.92</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">Sergio Camello</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">Radamel Falcao</td>
+</tr>
+<tr>
+<td style="text-align:left">Universidad César Vallejo - Peru</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">28.88</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Sais Santibañez</td>
+<td style="text-align:left">40</td>
+<td style="text-align:left">Paolo Guerrero</td>
+</tr>
+<tr>
+<td style="text-align:left">Inter Milan - Italy</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">28.88</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Kristjan Asllani</td>
+<td style="text-align:left">36</td>
+<td style="text-align:left">Francesco Acerbi</td>
+</tr>
+<tr>
+<td style="text-align:left">CD América de Cali - Colombia</td>
+<td style="text-align:left">31</td>
+<td style="text-align:left">28.68</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Josen Escobar</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">Adrián Ramos</td>
+</tr>
+<tr>
+<td style="text-align:left">Atlético de Madrid - Spain</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">28.60</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">Arthur Vermeeren</td>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Axel Witsel</td>
+</tr>
+<tr>
+<td style="text-align:left">Técnico Universitario - Ecuador</td>
+<td style="text-align:left">30</td>
+<td style="text-align:left">28.60</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">Bryan Nazareno</td>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Eddie Guevara</td>
+</tr>
+<tr>
+<td style="text-align:left">Tacuary Football Club - Paraguay</td>
+<td style="text-align:left">38</td>
+<td style="text-align:left">28.58</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">Carlos Giménez</td>
+<td style="text-align:left">40</td>
+<td style="text-align:left">Luis Cabral</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

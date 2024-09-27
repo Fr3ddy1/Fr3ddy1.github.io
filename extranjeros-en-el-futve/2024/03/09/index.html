@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.122.0">
+
+
+<title>Extranjeros en el Futve temporada 2024 - Portafolio de FT</title>
+<meta property="og:title" content="Extranjeros en el Futve temporada 2024 - Portafolio de FT">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="/about/">Acerca</a></li>
+    
+    <li><a href="https://github.com/Fr3ddy1">GitHub</a></li>
+    
+    <li><a href="https://www.linkedin.com/in/freddy-f-tapia-c-667345a4/">Linkedin</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">6 min read</span>
+    
+
+    <h1 class="article-title">Extranjeros en el Futve temporada 2024</h1>
+
+    
+    <span class="article-date">2024-03-09</span>
+    
+
+    <div class="article-content">
+      
+      <h2 id="data-a-emplear">Data a emplear</h2>
+<p>Para acceder a la data del presente análisis se usó la librería <strong>worldfootballR</strong> donde se usó la función <strong>tm_player_market_values</strong> para lo siguiente,</p>
+<ul>
+<li>Extraer la plantilla de los equipos en la temporada 2024 del Futve.</li>
+<li>Extraer la plantilla de los equipos desde el 2004 hasta la temporada actual, cabe destacar que no existe información para los años 2020, 2021 y 2022.</li>
+</ul>
+<p>Por otra parte se realizó una recolección de data de las temporadas pasadas (2023) de la base completa de paises que ofrece la herramienta, en total existe información para 73 paises (en este documento sólo se consideraron las ligas top de Europa y sudamñerica). Esta información ayudará a poner en contexto si la cantidad de extranjeros en el Futve es baja o no. Para ellos se realizó el cálculo para toda sudamérica y las principales ligas europeas.</p>
+<h2 id="futve-2024">Futve 2024</h2>
+<p>En la siguiente tabla se puede apreciar la cantidad total de nacionalidades que existen en el torneo actual, en total se tienen 11 nacionalidades contando la venezolana, la gran mayoría vienen de sudamerica (Colombia, Argentina, Paraguay, Uruguay y Brasil) y centroamérica (Panamá) sin embargo existen algunos casos de Africa (Malí, Ghana y Nigeria) y Europa (Holanda / Paises Bajos).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">País</th>
+<th style="text-align:center">Cantidad jugadores</th>
+<th style="text-align:center">Porcentaje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">VEN</td>
+<td style="text-align:center">281</td>
+<td style="text-align:center">84.13</td>
+</tr>
+<tr>
+<td style="text-align:center">COL</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">5.39</td>
+</tr>
+<tr>
+<td style="text-align:center">ARG</td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">4.49</td>
+</tr>
+<tr>
+<td style="text-align:center">PAN</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">2.10</td>
+</tr>
+<tr>
+<td style="text-align:center">PAR</td>
+<td style="text-align:center">6</td>
+<td style="text-align:center">1.80</td>
+</tr>
+<tr>
+<td style="text-align:center">URU</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0.60</td>
+</tr>
+<tr>
+<td style="text-align:center">BRA</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0.30</td>
+</tr>
+<tr>
+<td style="text-align:center">GHA</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0.30</td>
+</tr>
+<tr>
+<td style="text-align:center">MLI</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0.30</td>
+</tr>
+<tr>
+<td style="text-align:center">NED</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0.30</td>
+</tr>
+<tr>
+<td style="text-align:center">NGA</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0.30</td>
+</tr>
+</tbody>
+</table>
+<p>En total se tiene la información de 334 jugadores divididos en 14 equipos. Los jugadores locales representan el 84.13% del total, los extranjeros en este año representan un 15.87%. Colombia es el país con mayor representación cuentan con 18 jugadores (5.39%), Argentina le sigue de cerca con 15 jugadores (4.49%).</p>
+<p>Por su parte, Panamá cuenta con 7 jugadores (2.10%) y Paraguay tiene 6 (1.80%). Existen casos puntuales de paises como Brasil (Dudu, Estudiantes de Mérida), Ghana (Livingstone Adjin, Inter Barinas), Malí (Moussa Bagayoko, Carabobo FC), Holanda (Stevy Okitokandjo, Academia Puerto Cabello) y Nigeria (Blessing Edet, Caracas FC) que cuentan con un representante.</p>
+<h2 id="comparación-con-sudamerica-y-principales-ligas-europeas">Comparación con sudamerica y principales ligas europeas</h2>
+<p>En la siguiente tabla se puede observar información del 2023 de todas las ligas de sudamerica más la MLS, la liga de México y las ligas más importantes de Europa, donde destacan Inglaterra, Italia, España, Francia, Portugal, Alemania, además de Rusia.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">País</th>
+<th style="text-align:center">Cantidad</th>
+<th style="text-align:center">Jug. locales</th>
+<th style="text-align:center">Jug. Extranjeros</th>
+<th style="text-align:center">% Local</th>
+<th style="text-align:center">% Extranjeros</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">England</td>
+<td style="text-align:center">533</td>
+<td style="text-align:center">172</td>
+<td style="text-align:center">361</td>
+<td style="text-align:center">32.27</td>
+<td style="text-align:center">67.73</td>
+</tr>
+<tr>
+<td style="text-align:center">Italy</td>
+<td style="text-align:center">550</td>
+<td style="text-align:center">202</td>
+<td style="text-align:center">348</td>
+<td style="text-align:center">36.73</td>
+<td style="text-align:center">63.27</td>
+</tr>
+<tr>
+<td style="text-align:center">Portugal</td>
+<td style="text-align:center">498</td>
+<td style="text-align:center">192</td>
+<td style="text-align:center">306</td>
+<td style="text-align:center">38.55</td>
+<td style="text-align:center">61.45</td>
+</tr>
+<tr>
+<td style="text-align:center">France</td>
+<td style="text-align:center">465</td>
+<td style="text-align:center">192</td>
+<td style="text-align:center">273</td>
+<td style="text-align:center">41.29</td>
+<td style="text-align:center">58.71</td>
+</tr>
+<tr>
+<td style="text-align:center">United States</td>
+<td style="text-align:center">813</td>
+<td style="text-align:center">358</td>
+<td style="text-align:center">455</td>
+<td style="text-align:center">44.03</td>
+<td style="text-align:center">55.97</td>
+</tr>
+<tr>
+<td style="text-align:center">Germany</td>
+<td style="text-align:center">502</td>
+<td style="text-align:center">257</td>
+<td style="text-align:center">245</td>
+<td style="text-align:center">51.20</td>
+<td style="text-align:center">48.80</td>
+</tr>
+<tr>
+<td style="text-align:center">Spain</td>
+<td style="text-align:center">507</td>
+<td style="text-align:center">295</td>
+<td style="text-align:center">212</td>
+<td style="text-align:center">58.19</td>
+<td style="text-align:center">41.81</td>
+</tr>
+<tr>
+<td style="text-align:center">Russia</td>
+<td style="text-align:center">419</td>
+<td style="text-align:center">256</td>
+<td style="text-align:center">163</td>
+<td style="text-align:center">61.10</td>
+<td style="text-align:center">38.90</td>
+</tr>
+<tr>
+<td style="text-align:center">Mexico</td>
+<td style="text-align:center">471</td>
+<td style="text-align:center">310</td>
+<td style="text-align:center">161</td>
+<td style="text-align:center">65.82</td>
+<td style="text-align:center">34.18</td>
+</tr>
+<tr>
+<td style="text-align:center">Ecuador</td>
+<td style="text-align:center">453</td>
+<td style="text-align:center">339</td>
+<td style="text-align:center">114</td>
+<td style="text-align:center">74.83</td>
+<td style="text-align:center">25.17</td>
+</tr>
+<tr>
+<td style="text-align:center">Chile</td>
+<td style="text-align:center">418</td>
+<td style="text-align:center">314</td>
+<td style="text-align:center">104</td>
+<td style="text-align:center">75.12</td>
+<td style="text-align:center">24.88</td>
+</tr>
+<tr>
+<td style="text-align:center">Bolivia</td>
+<td style="text-align:center">572</td>
+<td style="text-align:center">433</td>
+<td style="text-align:center">139</td>
+<td style="text-align:center">75.70</td>
+<td style="text-align:center">24.30</td>
+</tr>
+<tr>
+<td style="text-align:center">Peru</td>
+<td style="text-align:center">513</td>
+<td style="text-align:center">390</td>
+<td style="text-align:center">123</td>
+<td style="text-align:center">76.02</td>
+<td style="text-align:center">23.98</td>
+</tr>
+<tr>
+<td style="text-align:center">Brazil</td>
+<td style="text-align:center">617</td>
+<td style="text-align:center">496</td>
+<td style="text-align:center">121</td>
+<td style="text-align:center">80.39</td>
+<td style="text-align:center">19.61</td>
+</tr>
+<tr>
+<td style="text-align:center">Paraguay</td>
+<td style="text-align:center">432</td>
+<td style="text-align:center">361</td>
+<td style="text-align:center">71</td>
+<td style="text-align:center">83.56</td>
+<td style="text-align:center">16.44</td>
+</tr>
+<tr>
+<td style="text-align:center">Argentina</td>
+<td style="text-align:center">809</td>
+<td style="text-align:center">680</td>
+<td style="text-align:center">129</td>
+<td style="text-align:center">84.05</td>
+<td style="text-align:center">15.95</td>
+</tr>
+<tr>
+<td style="text-align:center">Venezuela</td>
+<td style="text-align:center">438</td>
+<td style="text-align:center">373</td>
+<td style="text-align:center">65</td>
+<td style="text-align:center">85.16</td>
+<td style="text-align:center">14.84</td>
+</tr>
+<tr>
+<td style="text-align:center">Uruguay</td>
+<td style="text-align:center">483</td>
+<td style="text-align:center">429</td>
+<td style="text-align:center">54</td>
+<td style="text-align:center">88.82</td>
+<td style="text-align:center">11.18</td>
+</tr>
+<tr>
+<td style="text-align:center">Colombia</td>
+<td style="text-align:center">624</td>
+<td style="text-align:center">565</td>
+<td style="text-align:center">59</td>
+<td style="text-align:center">90.54</td>
+<td style="text-align:center">9.46</td>
+</tr>
+</tbody>
+</table>
+<p>Dicha tabla pone en contexto el 15.87% de extranjeros que tiene el Futve en el 2024. En el 2023 el Futve tuvo un porcentaje similar (14.84%) donde se observa que tiene valores similares a Argentina (15.95%) y a Paraguay (16.44%).</p>
+<p>En sudamérica se puede ver que Ecuador es el pais donde más extranjeros juegan, de 453 jugadores, 339 son ecuatorianos y el resto (114) son extranjeros, esto representa un 25.17%. Colombia por su parte destaca en ser el país que en el 2023 tuvo menos jugadores extranjeros jugando en su 1era división, de 624 jugadores, sólo 59 son extranjeros, esto representa un 9.46%.</p>
+<p>En el otro extremo se encuentra Inglaterra, donde de 533 jugadores, 361 son extranjeros, lo que representa un 67.73%. De cerca le siguen las ligas de Italia y Portugal con un 63.27% y 61.45% de extranjeros respectivamente.</p>
+<h2 id="evolución-extranjeros-en-el-futve-en-el-tiempo">Evolución extranjeros en el Futve en el tiempo</h2>
+<p>Es interesante ver la evolución de la cantidad de extranjeros en el Futve en el tiempo, la siguiente tabla muestra como ha variado esta cantidad desde el 2004 hasta la actualidad, exceptuando los años 2020, 2021 y 2022.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Año</th>
+<th style="text-align:left">Cantidad</th>
+<th style="text-align:left">Jug. locales</th>
+<th style="text-align:left">Jug. Extranjeros</th>
+<th style="text-align:left">% Local</th>
+<th style="text-align:left">% Extranjeros</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2004</td>
+<td style="text-align:left">278</td>
+<td style="text-align:left">198</td>
+<td style="text-align:left">80</td>
+<td style="text-align:left">71.22</td>
+<td style="text-align:left">28.78</td>
+</tr>
+<tr>
+<td style="text-align:left">2005</td>
+<td style="text-align:left">226</td>
+<td style="text-align:left">181</td>
+<td style="text-align:left">45</td>
+<td style="text-align:left">80.09</td>
+<td style="text-align:left">19.91</td>
+</tr>
+<tr>
+<td style="text-align:left">2006</td>
+<td style="text-align:left">303</td>
+<td style="text-align:left">229</td>
+<td style="text-align:left">74</td>
+<td style="text-align:left">75.58</td>
+<td style="text-align:left">24.42</td>
+</tr>
+<tr>
+<td style="text-align:left">2007</td>
+<td style="text-align:left">725</td>
+<td style="text-align:left">529</td>
+<td style="text-align:left">196</td>
+<td style="text-align:left">72.97</td>
+<td style="text-align:left">27.03</td>
+</tr>
+<tr>
+<td style="text-align:left">2008</td>
+<td style="text-align:left">693</td>
+<td style="text-align:left">546</td>
+<td style="text-align:left">145</td>
+<td style="text-align:left">78.79</td>
+<td style="text-align:left">20.92</td>
+</tr>
+<tr>
+<td style="text-align:left">2009</td>
+<td style="text-align:left">587</td>
+<td style="text-align:left">478</td>
+<td style="text-align:left">109</td>
+<td style="text-align:left">81.43</td>
+<td style="text-align:left">18.57</td>
+</tr>
+<tr>
+<td style="text-align:left">2010</td>
+<td style="text-align:left">661</td>
+<td style="text-align:left">536</td>
+<td style="text-align:left">125</td>
+<td style="text-align:left">81.09</td>
+<td style="text-align:left">18.91</td>
+</tr>
+<tr>
+<td style="text-align:left">2011</td>
+<td style="text-align:left">628</td>
+<td style="text-align:left">516</td>
+<td style="text-align:left">112</td>
+<td style="text-align:left">82.17</td>
+<td style="text-align:left">17.83</td>
+</tr>
+<tr>
+<td style="text-align:left">2012</td>
+<td style="text-align:left">613</td>
+<td style="text-align:left">495</td>
+<td style="text-align:left">118</td>
+<td style="text-align:left">80.75</td>
+<td style="text-align:left">19.25</td>
+</tr>
+<tr>
+<td style="text-align:left">2013</td>
+<td style="text-align:left">542</td>
+<td style="text-align:left">468</td>
+<td style="text-align:left">74</td>
+<td style="text-align:left">86.35</td>
+<td style="text-align:left">13.65</td>
+</tr>
+<tr>
+<td style="text-align:left">2015</td>
+<td style="text-align:left">851</td>
+<td style="text-align:left">753</td>
+<td style="text-align:left">98</td>
+<td style="text-align:left">88.48</td>
+<td style="text-align:left">11.52</td>
+</tr>
+<tr>
+<td style="text-align:left">2016</td>
+<td style="text-align:left">796</td>
+<td style="text-align:left">693</td>
+<td style="text-align:left">103</td>
+<td style="text-align:left">87.06</td>
+<td style="text-align:left">12.94</td>
+</tr>
+<tr>
+<td style="text-align:left">2017</td>
+<td style="text-align:left">761</td>
+<td style="text-align:left">670</td>
+<td style="text-align:left">91</td>
+<td style="text-align:left">88.04</td>
+<td style="text-align:left">11.96</td>
+</tr>
+<tr>
+<td style="text-align:left">2018</td>
+<td style="text-align:left">904</td>
+<td style="text-align:left">804</td>
+<td style="text-align:left">100</td>
+<td style="text-align:left">88.94</td>
+<td style="text-align:left">11.06</td>
+</tr>
+<tr>
+<td style="text-align:left">2019</td>
+<td style="text-align:left">683</td>
+<td style="text-align:left">639</td>
+<td style="text-align:left">44</td>
+<td style="text-align:left">93.56</td>
+<td style="text-align:left">6.44</td>
+</tr>
+<tr>
+<td style="text-align:left">2023</td>
+<td style="text-align:left">440</td>
+<td style="text-align:left">374</td>
+<td style="text-align:left">66</td>
+<td style="text-align:left">85.00</td>
+<td style="text-align:left">15.00</td>
+</tr>
+<tr>
+<td style="text-align:left">2024</td>
+<td style="text-align:left">334</td>
+<td style="text-align:left">281</td>
+<td style="text-align:left">53</td>
+<td style="text-align:left">84.13</td>
+<td style="text-align:left">15.87</td>
+</tr>
+</tbody>
+</table>
+<p>Se puede apreciar que en el año 2004 existian 278 jugadores en el torneo, de los cuales 80 fueron extranjeros, esto representa el 28.78%. En el año 2007 de 725 jugadores, 196 fueron extranjeros, lo que representa un 27.03%.
+Este porcentaje se mantuvo siempre superior a un 13% hasta antes del 2013. Ya durante la crisis económica que sufrió el país, vemos una disminución importante, donde destaca el año 2019 donde sólo se contaban con 44 jugadores extranjeros.</p>
+<img src="/extranjeros-en-el-futve/2024/03/09/index_files/figure-html/unnamed-chunk-7-1.png" width="672" />
+<h2 id="extranjeros-en-el-futve-temporada-2024">Extranjeros en el Futve temporada 2024</h2>
+<p>Finalmente la siguiente tabla muestra un resumen de los equipos del torneo actual y la cantidad de jugadores que tienen y su nacionalidad (esto según la data recolectada con la librería WorldfootballR).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Equipo</th>
+<th style="text-align:left">N</th>
+<th style="text-align:left">VEN</th>
+<th style="text-align:left">COL</th>
+<th style="text-align:left">ARG</th>
+<th style="text-align:left">PAN</th>
+<th style="text-align:left">PAR</th>
+<th style="text-align:left">URU</th>
+<th style="text-align:left">BRA</th>
+<th style="text-align:left">GHA</th>
+<th style="text-align:left">MAL</th>
+<th style="text-align:left">NED</th>
+<th style="text-align:left">NGA</th>
+<th style="text-align:left">% VEN</th>
+<th style="text-align:left">% EXT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">UCV</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">76.19</td>
+<td style="text-align:left">23.81</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Táchira</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">76.92</td>
+<td style="text-align:left">23.08</td>
+</tr>
+<tr>
+<td style="text-align:left">Academia Puerto Cabello</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">77.78</td>
+<td style="text-align:left">22.22</td>
+</tr>
+<tr>
+<td style="text-align:left">Carabobo</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">18</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">78.26</td>
+<td style="text-align:left">21.74</td>
+</tr>
+<tr>
+<td style="text-align:left">Inter Barinas</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">79.17</td>
+<td style="text-align:left">20.83</td>
+</tr>
+<tr>
+<td style="text-align:left">Monagas</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">19</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">79.17</td>
+<td style="text-align:left">20.83</td>
+</tr>
+<tr>
+<td style="text-align:left">Metropolitanos</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">16</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">80.00</td>
+<td style="text-align:left">20.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Portuguesa</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">83.33</td>
+<td style="text-align:left">16.67</td>
+</tr>
+<tr>
+<td style="text-align:left">Estudiantes de Mérida</td>
+<td style="text-align:left">20</td>
+<td style="text-align:left">17</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">85.00</td>
+<td style="text-align:left">15.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo La Guaira</td>
+<td style="text-align:left">27</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">85.19</td>
+<td style="text-align:left">14.81</td>
+</tr>
+<tr>
+<td style="text-align:left">Angostura Fútbol Club</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">21</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">91.30</td>
+<td style="text-align:left">8.70</td>
+</tr>
+<tr>
+<td style="text-align:left">Caracas</td>
+<td style="text-align:left">25</td>
+<td style="text-align:left">23</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">92.00</td>
+<td style="text-align:left">8.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Zamora</td>
+<td style="text-align:left">26</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">92.31</td>
+<td style="text-align:left">7.69</td>
+</tr>
+<tr>
+<td style="text-align:left">Deportivo Rayo Zuliano</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">24</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">100.00</td>
+<td style="text-align:left">0.00</td>
+</tr>
+</tbody>
+</table>
+<p>Se aprecia que la UCV tiene el mayor porcentaje de jugadores extranjeros en su nómina, cuenta con 5 extranjeros (3 argentinos y 2 panameños) de un total de 21 jugadores, esto representa un 23.81%. De cerca le siguen el Deportivo Táchira y la Academia Puerto Cabello con un 23.08% y 22.22% respectivamente.</p>
+<p>En el otro extremo tenemos al Rayo Zuliano que no cuenta con jugadores del exterior, Zamora y Caracas le siguen de cerca donde tienen 2 extranjeros cada uno.</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+
+    
+  </body>
+</html>
+

@@ -10,37 +10,37 @@
     <atom:link href="/tags/futbol/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>test</title>
-      <link>/test/2024/09/27/</link>
+      <link>/2024/09/27/test/</link>
       <pubDate>Fri, 27 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>/test/2024/09/27/</guid>
+      <guid>/2024/09/27/test/</guid>
       <description>PRuebassss</description>
     </item>
     <item>
       <title>Análisis Fecha 9 - Futve 2024</title>
-      <link>/an-lisis-fecha-9-futve-2024/2024/09/25/</link>
+      <link>/2024/09/25/an-lisis-fecha-9-futve-2024/</link>
       <pubDate>Wed, 25 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>/an-lisis-fecha-9-futve-2024/2024/09/25/</guid>
+      <guid>/2024/09/25/an-lisis-fecha-9-futve-2024/</guid>
       <description> </description>
     </item>
     <item>
       <title>Análisis Fecha 8 - Futve 2024</title>
-      <link>/an-lisis-fecha-8-futve-2024/2024/09/20/</link>
+      <link>/2024/09/20/an-lisis-fecha-8-futve-2024/</link>
       <pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>/an-lisis-fecha-8-futve-2024/2024/09/20/</guid>
+      <guid>/2024/09/20/an-lisis-fecha-8-futve-2024/</guid>
       <description> </description>
     </item>
     <item>
       <title>Valor de mercado en el Futve temporada 2024</title>
-      <link>/valor-de-mercado-en-el-futve-temporada-2024/2024/03/21/</link>
+      <link>/2024/03/21/valor-de-mercado-en-el-futve-temporada-2024/</link>
       <pubDate>Thu, 21 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>/valor-de-mercado-en-el-futve-temporada-2024/2024/03/21/</guid>
+      <guid>/2024/03/21/valor-de-mercado-en-el-futve-temporada-2024/</guid>
       <description>Valor de mercado Futve 2024 En la siguiente tabla se muestra un comparativo en cuanto al valor de mercado de los equipos del Futve en la presente temporada, el mismo se obtuvo a partir de la suma del valor de mercado de todos los jugadores de cada equipo, la Academia Puerto Cabello es el equipo mejor valorado con un total de 6.2 millones de Euros de cerca le siguen el Deportivo Táchira (5.</description>
     </item>
     <item>
       <title>Extranjeros en el Futve temporada 2024</title>
-      <link>/extranjeros-en-el-futve/2024/03/09/</link>
+      <link>/2024/03/09/extranjeros-en-el-futve/</link>
       <pubDate>Sat, 09 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>/extranjeros-en-el-futve/2024/03/09/</guid>
+      <guid>/2024/03/09/extranjeros-en-el-futve/</guid>
       <description>Data a emplear Para acceder a la data del presente análisis se usó la librería worldfootballR donde se usó la función tm_player_market_values para lo siguiente,&#xA;Extraer la plantilla de los equipos en la temporada 2024 del Futve. Extraer la plantilla de los equipos desde el 2004 hasta la temporada actual, cabe destacar que no existe información para los años 2020, 2021 y 2022. Por otra parte se realizó una recolección de data de las temporadas pasadas (2023) de la base completa de paises que ofrece la herramienta, en total existe información para 73 paises (en este documento sólo se consideraron las ligas top de Europa y sudamñerica).</description>
     </item>
   </channel>

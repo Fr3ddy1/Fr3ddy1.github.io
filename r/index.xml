@@ -106,5 +106,12 @@
       <guid>/2020/08/15/gr-fico-de-radar-usando-r/</guid>
       <description>El gráfico de radar es una representación visual que se puede usar para describir el nivel de habilidades de diferentes jugadores. Los videojuegos como FIFA o PES suelen usarlos, para describir y presentar la habilidad de cada jugador. En este artículo se presenta el proceso de creación de estos gráficos usando el lenguaje de programación R.</description>
     </item>
+    <item>
+      <title>Animaciones en R</title>
+      <link>/2020/07/02/animaciones-en-r/</link>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/2020/07/02/animaciones-en-r/</guid>
+      <description>&#xD;</description>
+    </item>
   </channel>
 </rss>

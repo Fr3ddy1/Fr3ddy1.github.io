@@ -93,6 +93,13 @@
       <description>Librería worldfootballR Es una librería de libre acceso que permite descargar información interesante sobre fútbol de manera gratuita. Tiene funciones optimizadas que permiten obtener en cuestión de segundos información importante de más de 70 paises y unas 78 competiciones alrededor del mundo. Las principales fuentes de datos que se consultan son,&#xA;Fbref: contiene información sobre diversas ligas en todo el mundo ofrece información sobre alineaciones, resultados, estadísticas a nivel de equipo y a nivel jugador.</description>
     </item>
     <item>
+      <title>Goles esperados - xG</title>
+      <link>/2023/10/07/goles-esperados-xg/</link>
+      <pubDate>Sat, 07 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>/2023/10/07/goles-esperados-xg/</guid>
+      <description>El gol esperado ó Xg es una métrica que nos indica que tan probable que un remate sea gol de acuerdo con sus características, como por ejemplo su potencia, distancia a la arquería, lugar del remate, posición del arquero, entre otros.&#xA;Es posible utilizar esta métrica para calcular la siguiente diferencia,&#xA;Diferencia = Goles - Goles esperados&#xA;con ella podemos ver qué tan efectivo es un equipo en cuanto a las ocasiones creadas.</description>
+    </item>
+    <item>
       <title>Análisis disparos Eurocopa 2020</title>
       <link>/2023/10/04/an-lisis-disparos-eurocopa-2020/</link>
       <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>

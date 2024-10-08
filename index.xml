@@ -107,6 +107,13 @@
       <description>Recientemente StatsBomb realizó una publicación en donde menciona que se encuentra disponible data de libre acceso relacionada a los eventos de diferentes competiciones y la cual puede ser accedida mediante le uso del paquete StatsbombR.&#xA;Esta data es muy valiosa ya que contiene una gran cantidad de eventos a partir de los cuales se pueden realizar numerosos análisis.&#xA;En particular se pueden analizar los disparos realizados por cualquier jugador y determinar cuál era su probabilidad de anotar y saber cual fue el resultado de dicho disparo.</description>
     </item>
     <item>
+      <title>Análisis fase de grupos mundial 2022</title>
+      <link>/2023/09/08/an-lisis-fase-de-grupos-mundial-2022/</link>
+      <pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>/2023/09/08/an-lisis-fase-de-grupos-mundial-2022/</guid>
+      <description>Gracias a la colaboración de Sports Data Campus y BEPRO fue posible contar con la información de todos los partidos del mundial Qatar 2022 ⚽ en su fase de grupos.&#xA;Esta data contiene un rating o calificación para cada jugador (Bepro score), la misma es asignada según su desempeño y es un valor que va entre el cero y el diez.&#xA;Luego de realizar varias agrupaciones se realizó una análisis que se resume en estos gráficos,</description>
+    </item>
+    <item>
       <title>Trabajo de grado Sport Data Campus</title>
       <link>/2023/04/05/trabajo-de-grado-sport-data-campus/</link>
       <pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate>

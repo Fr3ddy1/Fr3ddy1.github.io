@@ -86,6 +86,13 @@
       <description>Data a emplear Para acceder a la data del presente análisis se usó la librería worldfootballR donde se usó la función tm_player_market_values para lo siguiente,&#xA;Extraer la plantilla de los equipos en la temporada 2024 del Futve. Extraer la plantilla de los equipos desde el 2004 hasta la temporada actual, cabe destacar que no existe información para los años 2020, 2021 y 2022. Por otra parte se realizó una recolección de data de las temporadas pasadas (2023) de la base completa de paises que ofrece la herramienta, en total existe información para 73 paises (en este documento sólo se consideraron las ligas top de Europa y sudamñerica).</description>
     </item>
     <item>
+      <title>Venezuela vs Paraguay - Preolímpico Venezuela 2024</title>
+      <link>/2024/02/21/venezuela-vs-paraguay-preol-mpico-venezuela-2024/</link>
+      <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>/2024/02/21/venezuela-vs-paraguay-preol-mpico-venezuela-2024/</guid>
+      <description>Hoy la #vinotinto ⚽ tiene la oportunidad de clasificar a los juegos olímpicos de Paris 2024 en su partido vs Paraguay. Depende de si mismo y necesita una victoria para lograrlo.&#xA;Ambos equipos llegan con 6 juegos disputados, cuentan con 1 derrota, 3 empates y 2 victorias. Gracias a la data proveniente de Smart stats, logré recopliar estas estadísticas durante todo el torneo,&#xA;💡 Remates a favor&#xA;📌 Venezuela ha realizado 53 remates al arco de ellos 20 (37.</description>
+    </item>
+    <item>
       <title>Extracción data Futve</title>
       <link>/2024/02/17/extracci-n-data-futve/</link>
       <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
